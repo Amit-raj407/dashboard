@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#nav {
+    transition: 0.3s;
+}
+
+#img {
+  border-radius: 100%;
+}
+
+body {
+  /* background: rgb(12, 19, 45);
+  background: linear-gradient(180deg, rgba(12, 19, 45, 1) 0%, #338db2 81%); */
+  background-image: url('./assets/bg/wall_num8.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#section_1 {
+  margin-top: 80px;
+}
+
+.chart_card,
+.overview_card {
+  padding: 20px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 250, 250, 0.7);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.task-card {
+  padding: 20px;
+}
+
+.task-card:hover i {
+  transform: scale(1.3);
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.task-card:hover h4 {
+  transform: scale(1.05);
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.task-card:hover h1 {
+  transform: scale(1.05);
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.logo {
+  width: 160px;
+  height: 20px;
+}
+
+.overview_card {
+  padding: 20px;
+}
+
+/* --------------------------------------------------------------------- */
+
+.hover-underline-animation {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  position: relative;
+}
+.hover-underline-animation:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(31, 3, 3);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.hover-underline-animation:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* ------------------------------Footer--------------------------------------- */
+
+#footer {
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+p {
+  padding-left: 5em;
+  padding-right: 5em;
+  text-justify: auto;
+}
+
+.tagline {
+  font-weight: bold;
+}
+
+.tagline:hover {
+  color: rgb(177, 130, 130);
+  transition: 0.6s;
+}
+
+.explore li {
+  list-style: none;
+  text-align: center;
+  text-justify: auto;
+  padding-right: 35px;
+  margin-top: 15px;
+}
+
+.explore li a {
+  text-decoration: none;
+  text-justify: auto;
+  color: grey;
+}
+
+.explore li a:hover {
+  color: red;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.color-swap {
+  color: gray;
+}
+
+#made-with {
+  margin-top: 1.2cm;
+}
+
+
+
+/* --------------------ScrollBar-------------------------------- */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
